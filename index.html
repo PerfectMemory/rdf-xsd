@@ -31,13 +31,18 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h1>Extended XSD Datatypes for RDF.rb</h1>
+        <h1>
+<a name="extended-xsd-datatypes-for-rdfrb" class="anchor" href="#extended-xsd-datatypes-for-rdfrb"><span class="octicon octicon-link"></span></a>Extended XSD Datatypes for RDF.rb</h1>
 
 <p>This gem adds additional RDF::Literal subclasses for extended <a href="http://www.w3.org/TR/2004/REC-xmlschema-2-20041028/#built-in-datatypes">XSD datatypes</a></p>
 
 <ul>
-<li><a href="http://github.com/gkellogg/rdf-xsd">http://github.com/gkellogg/rdf-xsd</a></li>
-</ul><h2>Features</h2>
+<li><a href="http://github.com/ruby-rdf/rdf-xsd">http://github.com/ruby-rdf/rdf-xsd</a></li>
+</ul><p><a href="http://badge.fury.io/rb/rdf-xsd"><img src="https://badge.fury.io/rb/rdf-xsd.png" alt="Gem Version"></a>
+<a href="http://travis-ci.org/ruby-rdf/rdf-xsd"><img src="https://travis-ci.org/ruby-rdf/rdf-xsd.png?branch=master" alt="Build Status"></a></p>
+
+<h2>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
 
 <ul>
 <li>Additional xsd:integer subtypes</li>
@@ -46,26 +51,31 @@
 <li>rdf:XMLLiteral</li>
 <li>XML Exclusive Canonicalization (Nokogiri &amp; REXML)</li>
 <li>XML Literal comparisions (EquivalentXml, ActiveSupport or String)</li>
-</ul><h2>Examples</h2>
+</ul><h2>
+<a name="examples" class="anchor" href="#examples"><span class="octicon octicon-link"></span></a>Examples</h2>
 
 <pre><code>require 'rdf'
 require 'rdf/xsd'
 </code></pre>
 
-<h2>Dependencies</h2>
+<h2>
+<a name="dependencies" class="anchor" href="#dependencies"><span class="octicon octicon-link"></span></a>Dependencies</h2>
 
 <ul>
 <li>
-<a href="http://rubygems.org/gems/rdf">RDF.rb</a> (&gt;= 0.3.1)</li>
+<a href="http://ruby-lang.org/">Ruby</a> (&gt;= 1.9.2)</li>
 <li>
-<a href="http://rubygems.org/gems/nokogiri">Nokogiri</a> (&gt;= 1.3.3)</li>
-<li>
-<a href="https://rubygems.org/gems/haml">Haml</a> (&gt;= 3.0.0)</li>
-</ul><h2>Documentation</h2>
+<a href="http://rubygems.org/gems/rdf">RDF.rb</a> (&gt;= 1.1)</li>
+<li>Soft dependency on <a href="http://rubygems.org/gems/nokogiri">Nokogiri</a> (&gt;= 1.5.9)</li>
+<li>Soft dependency on <a href="http://rubygems.org/gems/equivalent-xml">EquivalentXML</a> (&gt;= 0.2.8)</li>
+<li>Soft dependency on <a href="http://rubygems.org/gems/activesupport">ActiveSupport</a> (&gt;= 3.0.0)</li>
+</ul><h2>
+<a name="documentation" class="anchor" href="#documentation"><span class="octicon octicon-link"></span></a>Documentation</h2>
 
 <p>Full documentation available on [Rubydoc.info][XSD doc]</p>
 
-<h3>Principle Classes</h3>
+<h3>
+<a name="principle-classes" class="anchor" href="#principle-classes"><span class="octicon octicon-link"></span></a>Principle Classes</h3>
 
 <ul>
 <li>{RDF::Literal::Base64Binary}</li>
@@ -81,7 +91,9 @@ require 'rdf/xsd'
 <li>{RDF::Literal::Long}
 
 <ul>
-<li>{RDF::Literal::Int}</li>
+<li>{RDF::Literal::Int}
+
+<ul>
 <li>{RDF::Literal::Short}
 
 <ul>
@@ -90,16 +102,26 @@ require 'rdf/xsd'
 </li>
 </ul>
 </li>
+</ul>
+</li>
 <li>{RDF::Literal::NonNegativeInteger}
 
 <ul>
 <li>{RDF::Literal::PositiveInteger}</li>
-<li>{RDF::Literal::UnsignedLong}</li>
+<li>{RDF::Literal::UnsignedLong}
+
+<ul>
 <li>{RDF::Literal::UnsignedInt}
 
 <ul>
-<li>{RDF::Literal::UnsignedShort}</li>
+<li>{RDF::Literal::UnsignedShort}
+
+<ul>
 <li>{RDF::Literal::UnsignedByte}</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -110,17 +132,8 @@ require 'rdf/xsd'
 <li>{RDF::Literal::Month}</li>
 <li>{RDF::Literal::Day}</li>
 <li>{RDF::Literal::XML}</li>
-</ul><h2>Dependencies</h2>
-
-<ul>
-<li>
-<a href="http://ruby-lang.org/">Ruby</a> (&gt;= 1.8.7) or (&gt;= 1.8.1 with <a href="http://rubygems.org/gems/backports">Backports</a>)</li>
-<li>
-<a href="http://rubygems.org/gems/rdf">RDF.rb</a> (&gt;= 0.3.4)</li>
-<li>Soft dependency on <a href="http://rubygems.org/gems/nokogiri">Nokogiri</a> (&gt;= 1.5.0)</li>
-<li>Soft dependency on <a href="http://rubygems.org/gems/equivalent-xml">EquivalentXML</a> (&gt;= 0.2.8)</li>
-<li>Soft dependency on <a href="http://rubygems.org/gems/activesupport">ActiveSupport</a> (&gt;= 2.3.0)</li>
-</ul><h2>Installation</h2>
+</ul><h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
 
 <p>The recommended installation method is via <a href="http://rubygems.org/">RubyGems</a>.
 To install the latest official release of the <code>RDF::XSD</code> gem, do:</p>
@@ -128,17 +141,22 @@ To install the latest official release of the <code>RDF::XSD</code> gem, do:</p>
 <pre><code>% [sudo] gem install rdf-xsd
 </code></pre>
 
-<h2>Mailing List</h2>
+<h2>
+<a name="mailing-list" class="anchor" href="#mailing-list"><span class="octicon octicon-link"></span></a>Mailing List</h2>
 
 <ul>
 <li><a href="http://lists.w3.org/Archives/Public/public-rdf-ruby/">http://lists.w3.org/Archives/Public/public-rdf-ruby/</a></li>
-</ul><h2>Author</h2>
+</ul><h2>
+<a name="author" class="anchor" href="#author"><span class="octicon octicon-link"></span></a>Author</h2>
 
 <ul>
 <li>
-<a href="http://github.com/gkellogg">Gregg Kellogg</a> - <a href="http://kellogg-assoc.com/">http://kellogg-assoc.com/</a>
+<a href="http://github.com/gkellogg">Gregg Kellogg</a> - <a href="http://greggkellogg.net/">http://greggkellogg.net/</a>
 </li>
-</ul><h2>Contributing</h2>
+</ul><h2>
+<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<p>This repository uses <a href="https://github.com/nvie/gitflow">Git Flow</a> to mange development and release activity. All submissions <em>must</em> be on a feature branch based on the <em>develop</em> branch to ease staging and integration.</p>
 
 <ul>
 <li>Do your best to adhere to the existing coding conventions and idioms.</li>
@@ -152,7 +170,8 @@ list in the the <code>README</code>. Alphabetical order applies.</li>
 <li>Do note that in order for us to merge any non-trivial changes (as a rule
 of thumb, additions larger than about 15 lines of code), we need an
 explicit <a href="http://lists.w3.org/Archives/Public/public-rdf-ruby/2010May/0013.html">public domain dedication</a> on record from you.</li>
-</ul><h2>License</h2>
+</ul><h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
 
 <p>This is free and unencumbered public domain software. For more information,
 see <a href="http://unlicense.org/">http://unlicense.org/</a> or the accompanying {file:UNLICENSE} file.</p>
